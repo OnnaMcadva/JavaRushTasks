@@ -1,0 +1,1675 @@
+package com.javarush.task.task01.task0131;
+
+/* 
+Полнометражная картина
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getMetreFromCentimetre(567));
+    }
+
+    public static int getMetreFromCentimetre(int centimetre) {
+        return centimetre / 100;}
+}
+
+/* Полнометражная картина
+Реализуй метод getMetreFromCentimetre(int centimetre). Метод на вход принимает количество сантиметров. Нужно сделать так, чтобы метод возвращал число полных метров в centimetre. (1 метр = 100 см).
+
+Пример:
+Метод getMetreFromCentimetre вызывается с параметром 243.
+
+Пример вывода:
+2
+
+
+Requirements:
+1. Программа не должна считывать данные с клавиатуры.
+2. Метод getMetreFromCentimetre(int) должен быть публичным и статическим.
+3. Метод getMetreFromCentimetre должен возвращать значение типа int.
+4. Метод getMetreFromCentimetre не должен ничего выводить на экран.
+5. Метод getMetreFromCentimetre должен правильно возвращать количество полных метров в centimetre. */
+
+
+package com.javarush.task.task01.task0132;
+
+/* 
+Сумма цифр трехзначного числа
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(546));
+    }
+
+    public static int sumDigitsInNumber(int number) {
+       return (number / 100) + (number / 10) - (number / 100) * 10 + number % 10; //напишите тут ваш код
+    }
+}
+
+/* Сумма цифр трехзначного числа
+Напиши код метода sumDigitsInNumber(int number). Метод на вход принимает целое трехзначное число. Нужно посчитать сумму цифр этого числа, и вернуть эту сумму.
+
+Пример:
+Метод sumDigitsInNumber вызывается с параметром 546.
+
+Пример вывода:
+15
+
+
+Requirements:
+1. Программа не должна считывать данные с клавиатуры.
+2. Метод sumDigitsInNumber(int) должен быть публичным и статическим.
+3. Метод sumDigitsInNumber должен возвращать значение типа int.
+4. Метод sumDigitsInNumber не должен ничего выводить на экран.
+5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number. */
+
+
+package com.javarush.task.task01.task0133;
+
+/* 
+Не думать о секундах…
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int secondsAfter15 = 30 * 60;
+        System.out.println(secondsAfter15);
+    }
+}
+
+/* Не думать о секундах…
+Напиши код, который считает сколько секунд прошло с 15:00, если на часах 15:30. Выведи результат на экран.
+
+
+Requirements:
+1. Программа должна выводить текст.
+2. Выведенный текст должен быть целым положительным числом.
+3. Выведенное число должно быть кратно 60.
+4. Выводимое число должно соответствовать заданию. */
+
+
+package com.javarush.task.task01.task0134;
+
+/* 
+Набираем воду в бассейн
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getVolume(25, 5, 2));
+    }
+
+    public static long getVolume(int a, int b, int c) {
+       return a * b * c * 1000; //напишите тут ваш код
+    }
+}
+
+/* Набираем воду в бассейн
+Амиго, сегодня наша задача наполнить корабельный бассейн. Нужно посчитать, сколько литров воды нужно для заполнения бассейна до бортов. Известно, что бассейн имеет линейные размеры a × b × c, заданные в метрах.
+Эти размеры передаются в метод getVolume. Метод должен вернуть количество литров воды, которое нужно для наполнения бассейна.
+
+Пример:
+Метод getVolume вызывается с параметрами 25, 5, 2.
+
+Пример вывода:
+250000
+
+
+Requirements:
+1. Метод getVolume(int, int, int) должен быть публичным и статическим.
+2. Метод getVolume(int, int, int) должен возвращать значение типа long.
+3. Метод getVolume(int, int, int) не должен ничего выводить на экран.
+4. Метод getVolume(int, int, int) должен правильно возвращать количество воды, которое необходимо для наполнения бассейна в литрах. */
+
+
+package com.javarush.task.task03.task0302;
+
+/* 
+Немедленно в печать
+*/
+
+public class Solution {
+    // напишите тут ваш код
+
+    public static void main(String[] args) {
+        printString("Hello, Amigo!");
+    }
+    public static void printString(String s) {
+        System.out.println(s);
+    }
+}
+
+/* Немедленно в печать
+Добавь метод public static void printString(String s), в нем напиши код, который будет выводить переданную строку на экран.
+
+
+Requirements:
+1. Добавь метод printString, у которого аргумент имеет тип String.
+2. Метод printString должен быть void.
+3. Метод printString должен быть static.
+4. Метод printString должен быть public.
+5. Метод printString должен выводить переданный текст на экран.
+6. Программа должна вывести "Hello, Amigo!". */
+
+
+package com.javarush.task.task03.task0311;
+
+/* 
+Печатаем строки
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        writeToConsole("Hello world!");
+    }
+
+    public static void writeToConsole(String s) {
+        System.out.println("printing: " + s); //напишите тут ваш код
+
+    }
+}
+
+/* Печатаем строки
+Реализуй метод public static void writeToConsole(String s), который добавляет к началу строки выражение "printing: " и выводит измененную строку на экран.
+
+Пример вывода для "Hello world!":
+printing: Hello world!
+
+
+Requirements:
+1. Добавь метод writeToConsole, у которого аргумент имеет тип String.
+2. Метод writeToConsole должен быть void.
+3. Метод writeToConsole должен быть static.
+4. Метод writeToConsole должен быть public.
+5. Метод writeToConsole должен добавлять к началу строки "printing: " и выводить полученный результат на экран.
+6. Программа должна вывести "printing: Hello world!". */
+
+
+package com.javarush.task.task03.task0312;
+
+/* 
+Конвертируем время
+*/
+
+public class Solution {
+    public static int convertToSeconds(int hour) {
+        return hour * 60 * 60;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(convertToSeconds(12));
+        System.out.println(convertToSeconds(43));//напишите тут ваш код //напишите тут ваш код
+
+    }
+}
+
+/* Конвертируем время
+Добавь метод public static int convertToSeconds(int hour) который будет конвертировать часы в секунды.
+Вызови его дважды в методе main с любыми параметрами.
+Результаты выведи на экран, каждый раз с новой строки.
+
+
+Requirements:
+1. Добавь метод convertToSeconds, он должен быть public static, возвращать и принимать int.
+2. Метод convertToSeconds должен переводить переданные часы в секунды.
+3. Метод main должен дважды вызывать метод convertToSeconds.
+4. Метод main должен выводить результаты вызова на экран, каждый раз с новой строки.
+5. Метод convertToSeconds не должен ничего выводить на экран. */
+
+
+package com.javarush.task.task08.task0807;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+/* 
+LinkedList и ArrayList
+*/
+
+public class Solution {
+    public static Object createArrayList() {
+        ArrayList<String> list = new ArrayList<>();//напишите тут ваш код
+        return list;
+    }
+
+    public static Object createLinkedList() {
+        LinkedList<String> list = new LinkedList<String>();//напишите тут ваш код
+        return list;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+/* LinkedList и ArrayList
+Нужно создать два списка - LinkedList и ArrayList.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Программа должна содержать только три метода.
+4. Метод createArrayList() должен создавать и возвращать список ArrayList.
+5. Метод createLinkedList() должен создавать и возвращать список LinkedList. */
+
+
+package com.javarush.task.task08.task0808;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+/* 
+10 тысяч удалений и вставок
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        // ArrayList
+        ArrayList arrayList = new ArrayList();
+        insert10000(arrayList);
+        get10000(arrayList);
+        set10000(arrayList);
+        remove10000(arrayList);
+
+        // LinkedList
+        LinkedList linkedList = new LinkedList();
+        insert10000(linkedList);
+        get10000(linkedList);
+        set10000(linkedList);
+        remove10000(linkedList);
+    }
+
+    public static void insert10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.add(i, new Object());
+        }
+
+    }
+
+    public static void get10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.get(i);
+        }
+    }
+
+    public static void set10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.set(i, new Object());
+        }
+
+    }
+
+    public static void remove10000(List list) {
+       for (int i = 0; i < 10000; i++) {
+           list.remove(0);
+       }
+    }
+}
+
+/* 10 тысяч удалений и вставок
+Для arrayList и linkedList провести 10 тысяч вставок, удалений, а также вызовов get и set.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Класс Solution должен содержать только 5 методов.
+4. Метод insert10000(List list) должен вставлять 10 тысяч элементов в список.
+5. Метод get10000(List list) должен вызывать 10 тысяч раз get у списка.
+6. Метод set10000(List list) должен вызывать 10 тысяч раз set у списка.
+7. Метод remove10000(List list) должен удалять 10 тысяч элементов из списка. */
+
+
+package com.javarush.task.task08.task0809;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+/* 
+Время для 10 тысяч вставок
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getInsertTimeInMs(new ArrayList()));
+        System.out.println(getInsertTimeInMs(new LinkedList()));
+    }
+
+    public static long getInsertTimeInMs(List list) {
+        long msDelay = 0;
+        Date currentTime = new Date();           //получаем текущую дату и время
+        insert10000(list);
+        Date newTime = new Date();               //получаем новое текущее время
+        return msDelay = newTime.getTime() - currentTime.getTime(); //вычисляем разницу
+    }
+
+    public static void insert10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.add(0, new Object());
+        }
+    }
+}
+
+/*Время для 10 тысяч вставок
+Измерить, сколько времени занимает 10 тысяч вставок для каждого списка.
+Метод getInsertTimeInMs должен вернуть время своего исполнения в миллисекундах.
+
+
+Requirements:
+1. Программа должна выводить числа на экран.
+2. Метод main должен вызывать метод getInsertTimeInMs только два раза.
+3. Метод insert10000(List list) должен вставлять 10 тысяч элементов в список.
+4. Метод getInsertTimeInMs должен вызывать метод insert10000 только один раз.
+5. Метод getInsertTimeInMs должен вернуть время в миллисекундах, которое занимает 10 тысяч вставок в список. */
+
+
+package com.javarush.task.task08.task0810;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+/* 
+Время для 10 тысяч вызовов get
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getGetTimeInMs(fill(new ArrayList())));
+        System.out.println(getGetTimeInMs(fill(new LinkedList())));
+    }
+
+    public static List fill(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.add(new Object());
+        }
+        return list;
+    }
+
+    public static long getGetTimeInMs(List list) {
+        Date currentTime = new Date();
+        get10000(list);
+        Date newTime = new Date();
+        return (newTime.getTime() - currentTime.getTime());
+    }
+
+    public static void get10000(List list) {
+        if (list.isEmpty()) {
+            return;
+        }
+        int x = list.size() / 2;
+
+        for (int i = 0; i < 10000; i++) {
+            list.get(x);
+        }
+    }
+}
+
+/*Время для 10 тысяч вызовов get
+Измерить, сколько времени занимает 10 тысяч вызовов get для каждого списка.
+Метод getGetTimeInMs должен вернуть время своего исполнения в миллисекундах.
+
+
+Requirements:
+1. Программа должна выводить числа на экран.
+2. Метод main должен вызывать метод getGetTimeInMs только два раза.
+3. Метод main должен вызывать метод fill только два раза.
+4. Метод fill(List list) должен вставлять 10 тысяч элементов в список.
+5. Метод get10000(List list) должен производить 10 тысяч вызовов get для списка.
+6. Метод getGetTimeInMs должен вызывать метод get10000(List list) только один раз.
+7. Метод getGetTimeInMs должен вернуть время в миллисекундах, которое занимает 10 тысяч вызовов get для списка. */
+
+
+package com.javarush.task.task08.task0811;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+/* 
+Квартет «Методы»
+*/
+
+public class Solution {
+    public static List getListForGet() {
+        return new ArrayList();
+    }
+
+    public static List getListForSet() {
+        return new ArrayList();
+
+    }
+
+    public static List getListForAddOrInsert() {
+        return new LinkedList();
+
+    }
+
+    public static List getListForRemove() {
+        return new LinkedList();
+
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/*Квартет «Методы»
+Реализовать 4 метода.
+Каждый из них должен возвращать список, который лучше всего подходит для выполнения данных операций (быстрее всего справится с большим количеством операций).
+Ничего измерять не нужно.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Класс Solution должен содержать только 5 методов.
+3. Метод getListForGet должен возвращать список, который лучше всего подходит для операции взятия элемента.
+4. Метод getListForSet должен возвращать список, который лучше всего подходит для установки значения элемента.
+5. Метод getListForAddOrInsert должен возвращать список, который лучше всего подходит для операций добавления или вставки элемента.
+6. Метод getListForRemove должен возвращать список, который лучше всего подходит для операции удаления элемента. */
+
+
+package com.javarush.task.task08.task0812;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+
+/* 
+Cамая длинная последовательность
+*/
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        List<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i < 10; i++) {
+            String s = reader.readLine();
+            if (s.isEmpty()) break;
+            list.add(Integer.parseInt(s));
+        }
+
+            int longestSequence = 1;
+            int currentLength = 1;
+
+            for (int i = 1; i < list.size(); i++) {
+                if (list.get(i - 1).equals(list.get(i))) {
+                    currentLength += 1;
+                } else {
+                    currentLength = 1;
+                }
+                if (currentLength > longestSequence) {
+                    longestSequence = currentLength;
+                }
+
+            }
+            System.out.println(longestSequence);
+        }
+
+    }
+
+
+/* Cамая длинная последовательность
+1. Создай список чисел.
+2. Добавь в список 10 чисел с клавиатуры.
+3. Вывести на экран длину самой длинной последовательности повторяющихся чисел в списке.
+
+Пример для списка 2, 4, 4, 4, 8, 8, 4, 12, 12, 14:
+3
+
+Искомое значение равно 3, т.к. самая длинная последовательность повторяющихся чисел состоит из трех четверок.
+
+
+Requirements:
+1. Программа должна выводить число на экран.
+2. Программа должна считывать значения с клавиатуры.
+3. В методе main объяви переменную типа List с типом элементов Integer и сразу проинициализируй ee.
+4. Программа должна добавлять в коллекцию 10 чисел, согласно условию.
+5. Программа должна выводить на экран длину самой длинной последовательности повторяющихся чисел в списке. */
+
+
+package com.javarush.task.task08.task0813;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/* 
+20 слов на букву «Л»
+*/
+
+public class Solution {
+    public static Set<String> createSet() {
+        Set<String> set = new HashSet<String>();
+        set.add("Ла");
+        set.add("Лвап");
+        set.add("Лнасоым");
+        set.add("Лимрвим");
+
+        set.add("Лала");
+        set.add("Лоывмг");
+        set.add("Лрвмсрна");
+        set.add("Лвармыув");
+
+        set.add("Ла-ла");
+        set.add("Лрымрыуа");
+        set.add("Лирра");
+        set.add("Лмсуну");
+
+        set.add("Ла-ла-ла");
+        set.add("Лиуран");
+        set.add("Лрыуануц");
+        set.add("Лрымвыуа");
+
+        set.add("Ла-ла-ла-ла");
+        set.add("Лрурур");
+        set.add("Личнцнц");
+        set.add("Личрцгцща");
+
+
+        return set;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/*20 слов на букву «Л»
+Создать множество строк (Set<String>), занести в него 20 слов на букву "Л".
+
+
+Requirements:
+1. Не изменяй заголовок метода createSet().
+2. Программа не должна выводить текст на экран.
+3. Программа не должна считывать значения с клавиатуры.
+4. Метод createSet() должен создавать и возвращать множество (реализация HashSet).
+5. Множество из метода createSet() должно содержать 20 слов на букву «Л». */
+
+
+package com.javarush.task.task08.task0814;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/* 
+Больше 10? Вы нам не подходите
+*/
+
+public class Solution {
+    public static Set<Integer> createSet() {
+        Set<Integer> set = new HashSet<Integer>();
+        set.add(2);
+        set.add(5);
+        set.add(56);
+        set.add(-20);
+
+        set.add(0);
+        set.add(78);
+        set.add(147);
+        set.add(216);
+
+        set.add(-6);
+        set.add(-21);
+        set.add(123);
+        set.add(-123);
+
+        set.add(66);
+        set.add(-666);
+        set.add(10);
+        set.add(15);
+
+        set.add(1);
+        set.add(22);
+        set.add(12);
+        set.add(330);
+
+        return set;
+
+    }
+
+    public static Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
+        Set<Integer> newSet = new HashSet<>(set);
+        for (Integer number : newSet) {
+            if (number > 10) {
+                set.remove(number);
+            }
+        }
+        return set;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/*Больше 10? Вы нам не подходите
+Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
+Удалить из множества все числа больше 10.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Класс Solution должен содержать только три метода.
+4. Метод createSet() должен создавать и возвращать множество Set состоящих из 20 различных чисел.
+5. Метод removeAllNumbersGreaterThan10() должен удалять из множества все числа больше 10. */
+
+
+package com.javarush.task.task08.task0815;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/* 
+Перепись населения
+*/
+
+public class Solution {
+    public static Map<String, String> createMap() {
+        Map<String, String> map = new HashMap<String, String>();
+
+        map.put("Davis", "Emma");
+        map.put("Hutton", "Olivia");
+
+        map.put("Finley", "Ava");
+        map.put("Beverley", "Sophia");
+
+        map.put("Anderson", "Charlotte");
+        map.put("Duncan", "Amelia");
+
+        map.put("Davidson", "Ava");
+        map.put("Ainsley", "Olivia");
+
+        map.put("Bayleigh", "Amelia");
+        map.put("Edwardson", "Sophia");
+
+        return map;
+
+    }
+
+    public static int getCountTheSameFirstName(Map<String, String> map, String name) {
+        int counterOfFirstNames = 0;
+        for (String names: map.values()) {
+
+            if (name.equals(names)) counterOfFirstNames += 1;
+        }
+        return counterOfFirstNames;
+    }
+
+    public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
+        int counterOfLastNames = 0;
+        for (String names : map.keySet()) {
+
+            if (lastName.equals(names)) counterOfLastNames += 1;
+        }
+        return counterOfLastNames;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/*Перепись населения
+Создать словарь (Map<String, String>) занести в него десять записей по принципу "Фамилия" - "Имя".
+Проверить сколько людей имеют совпадающие с заданным именем или фамилией.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Метод createMap() должен создавать и возвращать словарь Map с типом элементов String, String состоящих из 10 записей по принципу «Фамилия» - «Имя».
+4. Метод getCountTheSameFirstName() должен возвращать число людей у которых совпадает имя.
+5. Метод getCountTheSameLastName() должен возвращать число людей у которых совпадает фамилия. */
+
+
+package com.javarush.task.task08.task0816;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+/* 
+Добрая Зинаида и летние каникулы
+*/
+
+public class Solution {
+    public static Map<String, Date> createMap() throws ParseException {
+        DateFormat dateFormat = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
+        Map<String, Date> map = new HashMap<>();
+
+        map.put("Pattinson", dateFormat.parse("JANUARY 1 2012"));
+        map.put("Aislynn", dateFormat.parse("FEBRUARY 1 2012"));
+
+        map.put("Bexley", dateFormat.parse("MARCH 1 2012"));
+        map.put("Connelly", dateFormat.parse("APRIL 1 2012"));
+
+        map.put("Davis", dateFormat.parse("MAY 1 2012"));
+        map.put("Hutton", dateFormat.parse("JUNE 1 2012"));
+
+        map.put("Finley", dateFormat.parse("JULY 1 2012"));
+        map.put("Duncan", dateFormat.parse("AUGUST 1 2012"));
+
+        map.put("Anderson", dateFormat.parse("SEPTEMBER 1 2012"));
+        map.put("Davidson", dateFormat.parse("OCTOBER 1 2012"));
+
+        return map;
+    }
+
+    public static void removeAllSummerPeople(Map<String, Date> map) {
+        List<String> names = new ArrayList<String>(map.keySet());
+
+        for (String name : names) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(map.get(name));
+            int month = cal.get(Calendar.MONTH);
+            if (month >= Calendar.JUNE && month <= Calendar.AUGUST) {
+                map.remove(name);
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/* Добрая Зинаида и летние каникулы
+Создать словарь (Map<String, Date>) и занести в него десять записей по принципу: "фамилия" - "дата рождения".
+Удалить из словаря всех людей, родившихся летом.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Метод createMap() должен создавать и возвращать словарь HashMap с типом элементов String, Date состоящий из 10 записей.
+4. Метод removeAllSummerPeople() должен удалять из словаря всех людей, родившихся летом. */
+
+
+package com.javarush.task.task08.task0816.task0919;
+
+/* 
+Деление на ноль
+*/
+
+public class Solution {
+
+    public static void main(String[] args) {
+        try {
+            divideByZero();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void divideByZero() {
+        int a = 7;
+        int result = a / 0;
+        System.out.println(result);
+    }
+}
+
+/* Деление на ноль
+Создай метод public static void divideByZero, в котором подели любое число на ноль и выведи на экран результат деления.
+Оберни вызов метода divideByZero в try..catch. Выведи стек-трейс исключения используя метод exception.printStackTrace()
+
+
+Requirements:
+1. В классе должен быть метод public static void divideByZero().
+2. Метод divideByZero должен содержать операцию деления любого целого числа на ноль.
+3. Метод divideByZero должен вызывать System.out.println или System.out.print.
+4. Метод main должен содержать блок try..catch.
+5. Метод main должен отлавливать любые исключения метода divideByZero.
+6. Программа должна выводить стек-трейс пойманого исключения. */
+
+
+package com.javarush.task.task08.task0817;
+
+import java.util.*;
+
+/* 
+Нам повторы не нужны
+*/
+
+public class Solution {
+    public static Map<String, String> createMap() {
+        Map<String, String> map = new HashMap<>();
+
+        map.put("Davis", "Emma");
+        map.put("Hutton", "Olivia");
+
+        map.put("Finley", "Ava");
+        map.put("Beverley", "Sophia");
+
+        map.put("Anderson", "Charlotte");
+        map.put("Duncan", "Amelia");
+
+        map.put("Davidson", "Ava");
+        map.put("Ainsley", "Olivia");
+
+        map.put("Bayleigh", "Amelia");
+        map.put("Edwardson", "Sophia");
+
+        return map;
+
+    }
+
+    public static void removeTheFirstNameDuplicates(Map<String, String> map) {
+        Set<String> values = new HashSet<>();
+        ArrayList<String> list = new ArrayList<>(map.values());
+        for (String element : list) {
+            if (!values.add(element))
+                removeItemFromMapByValue(map, element);
+        }
+    }
+
+
+    public static void removeItemFromMapByValue(Map<String, String> map, String value) {
+        Map<String, String> copy = new HashMap<>(map);
+        for (Map.Entry<String, String> pair : copy.entrySet()) {
+            if (pair.getValue().equals(value)) {
+                map.remove(pair.getKey());
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/* Нам повторы не нужны
+Создать словарь (Map<String, String>) занести в него десять записей по принципу "фамилия" - "имя".
+Удалить людей, имеющих одинаковые имена.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Метод createMap() должен создавать и возвращать словарь Map с типом элементов String, String состоящих из 10 записей.
+4. Метод removeTheFirstNameDuplicates() должен удалять из словаря всех людей, имеющие одинаковые имена.
+5. Метод removeTheFirstNameDuplicates() должен вызывать метод removeItemFromMapByValue(). */
+
+
+package com.javarush.task.task08.task0818;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/* 
+Только для богачей
+*/
+
+public class Solution {
+    public static Map<String, Integer> createMap() {
+        Map<String, Integer> map = new HashMap<>();
+
+        map.put("Davis", 400);
+        map.put("Hutton", 600);
+
+        map.put("Finley", 500);
+        map.put("Beverley", 700);
+
+        map.put("Anderson", 1000);
+        map.put("Duncan", 800);
+
+        map.put("Davidson", 300);
+        map.put("Ainsley", 200);
+
+        map.put("Bayleigh", 5000);
+        map.put("Edwardson", 1);
+
+        return map;
+    }
+
+    public static void removeItemFromMap(Map<String, Integer> map) {
+        Map<String, Integer> copy = new HashMap<>(map);
+        for (Map.Entry<String, Integer> pair : copy.entrySet()) {
+            if (pair.getValue().compareTo(500) < 0) {
+                map.remove(pair.getKey());
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+/*  Только для богачей
+Создать словарь (Map<String, Integer>) и занести в него десять записей по принципу: "фамилия" - "зарплата".
+Удалить из словаря всех людей, у которых зарплата ниже 500.
+
+
+Requirements:
+1. Программа не должна выводить текст на экран.
+2. Программа не должна считывать значения с клавиатуры.
+3. Метод createMap() должен создавать и возвращать словарь Map с типом элементов String, Integer состоящих из 10 записей по принципу «фамилия» - «зарплата».
+4. Метод removeItemFromMap() должен удалять из словаря всех людей, у которых зарплата ниже 500. */
+
+
+package com.javarush.task.task08.task0819;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/* 
+Set из котов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        Set<Cat> cats = createCats();
+
+        Iterator<Cat> iterator = cats.iterator();
+        cats.remove(iterator.next());
+
+        printCats(cats);
+    }
+
+    public static Set<Cat> createCats() {
+
+        Set<Cat> cats = new HashSet<>();
+        for (int i = 0; i < 3; i++) {
+            cats.add(new Cat());
+        }
+        return cats;
+    }
+
+    public static void printCats(Set<Cat> cats) {
+
+        for (Cat mau : cats)
+        {
+            System.out.println(mau);
+        }
+    }
+
+    public static class Cat {
+
+        public Cat() {
+        }
+    }
+}
+
+/* Set из котов
+1. Внутри класса Solution создать public static класс кот - Cat.
+2. Реализовать метод createCats, он должен создавать множество (Set) котов и добавлять в него 3 кота.
+3. В методе main удалите одного кота из Set cats.
+4. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве.
+Каждый кот с новой строки.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Внутри класса Solution должен быть public static класс Cat с конструктором по умолчанию.
+3. Метод createCats() класса Solution должен возвращать множество (Set), содержащее 3 кота.
+4. Метод printCats() класса Solution должен вывести на экран всех котов из множества. Каждый кот с новой строки.
+5. Метод main() должен один раз вызывать метод createCats().
+6. Метод main() должен вызывать метод printCats().
+7. Метод main() должен удалять одного кота из множества котов. */
+
+
+package com.javarush.task.task08.task0820;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/* 
+Множество всех животных
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        Set<Cat> cats = createCats();
+        Set<Dog> dogs = createDogs();
+
+        Set<Object> pets = join(cats, dogs);
+        printPets(pets);
+
+        removeCats(pets, cats);
+        printPets(pets);
+    }
+
+    public static Set<Cat> createCats() {
+        Set<Cat> result = new HashSet<Cat>();
+            for (int i = 0; i < 4; i++) {
+            result.add(new Cat());
+        }
+        return result;
+    }
+
+    public static Set<Dog> createDogs() {
+        Set<Dog> result = new HashSet<Dog>();
+        for (int i = 0; i < 3; i++) {
+            result.add(new Dog());
+        }
+        return result;
+    }
+
+    public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs) {
+        Set<Object> pets = new HashSet<Object>();
+        pets.addAll(cats);
+        pets.addAll(dogs);
+        return pets;
+    }
+
+    public static void removeCats(Set<Object> pets, Set<Cat> cats) {
+        pets.removeAll(cats);
+    }
+
+    public static void printPets(Set<Object> pets) {
+        for (Object pet : pets)
+        {
+            System.out.println(pet);
+        }
+    }
+
+    public static class Cat {
+        public Cat() {
+        }
+    }
+
+    public static class Dog {
+        public Dog() {
+        }
+    }
+}
+
+/* Множество всех животных
+1. Внутри класса Solution создать public static классы Cat, Dog без конструктора или с конструктором без параметров.
+2. Реализовать метод createCats, который должен возвращать множество с 4 котами.
+3. Реализовать метод createDogs, который должен возвращать множество с 3 собаками.
+4. Реализовать метод join, который должен возвращать объединенное множество всех животных - всех котов и собак.
+5. Реализовать метод removeCats, который должен удалять из множества pets всех котов, которые есть в множестве cats.
+6. Реализовать метод printPets, который должен выводить на экран всех животных, которые в нем есть.
+Каждое животное с новой строки.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Внутри класса Solution должны быть созданы public static классы Cat, Dog.
+3. Метод createCats() класса Solution должен возвращать множество (Set) содержащее 4 кота.
+4. Метод createDogs() класса Solution должен возвращать множество (Set) содержащее 3 собаки.
+5. Метод join() класса Solution должен возвращать объединенное множество всех животных - всех котов и собак.
+6. Метод removeCats() должен удалять из множества pets всех котов, которые есть в множестве cats.
+7. Метод printPets() должен выводить на экран всех животных, которые в нем есть. Каждое животное с новой строки. */
+
+
+package com.javarush.task.task08.task0821;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/* 
+Однофамильцы и тёзки
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        Map<String, String> map = createPeopleMap();
+        printPeopleMap(map);
+    }
+
+    public static Map<String, String> createPeopleMap() {
+        Map<String, String> map = new HashMap<String, String>();
+
+        map.put("Davis", "Emma");
+        map.put("Hutton", "Olivia");
+
+        map.put("Finley", "Ava");
+        map.put("Beverley", "Sophia");
+
+        map.put("Anderson", "Charlotte");
+        map.put("Duncan", "Amelia");
+
+        map.put("Davidson", "Ava");
+        map.put("Beverley", "Olivia");
+
+        map.put("Bayleigh", "Amelia");
+        map.put("Edwardson", "Sophia");
+
+        return map;
+
+    }
+
+    public static void printPeopleMap(Map<String, String> map) {
+        for (Map.Entry<String, String> s : map.entrySet()) {
+            System.out.println(s.getKey() + " " + s.getValue());
+        }
+    }
+}
+
+/* Однофамильцы и тёзки
+1. Создать словарь Map (<String, String>) и добавить туда 10 человек в виде "Фамилия"-"Имя".
+2. Пусть среди этих 10 человек есть люди с одинаковыми именами.
+3. Пусть среди этих 10 человек есть люди с одинаковыми фамилиями.
+4. Вывести содержимое Map на экран.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Класс Solution должен содержать только три метода.
+3. Метод createPeopleMap() должен создавать и возвращать словарь Map с типом элементов String, String. Кроме того, добавлять в словарь 10 человек.
+4. В методе createPeopleMap() должны добавляться люди с одинаковыми фамилиями.
+5. В методе createPeopleMap() должны добавляться люди с одинаковыми именами.
+6. Метод printPeopleMap() должен выводить на экран всех людей из словаря Map. Каждое значение вывести с новой строки. Фамилия и имя разделены пробелом.
+7. Метод main() должен вызывать метод createPeopleMap().
+8. Метод main() должен вызывать метод printPeopleMap(). */
+
+
+package com.javarush.task.task08.task0821.task0825;
+
+/* 
+Модификатор запутался
+*/
+
+public class Solution {
+    public static int A = 5;
+    public static int B = 2;
+
+    public int C = A * B;
+    public static int D = B * A;
+
+    public static void main(String[] args) {
+    }
+
+    public int getValue() {
+        return D;
+    }
+
+    public int getValue2() {
+        return C;
+    }
+}
+
+/* Модификатор запутался
+Переставь один модификатор static, чтобы пример скомпилировался.
+
+
+Requirements:
+1. В классе Solution должна быть переменная A.
+2. В классе Solution должна быть переменная B.
+3. В классе Solution должна быть переменная C.
+4. В классе Solution должна быть переменная D.
+5. Класс Solution должен содержать только три метода.
+6. В классе должно быть 4 статика (переменные и методы). */
+
+
+package com.javarush.task.task08.task0822;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+/* 
+Минимальное из N чисел
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        List<Integer> integerList = getIntegerList();
+        System.out.println(getMinimum(integerList));
+    }
+
+    public static int getMinimum(List<Integer> array) {
+        return Collections.min(array);
+    }
+
+    public static List<Integer> getIntegerList() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        List<Integer> array = new ArrayList<Integer>();
+        int n = Integer.parseInt(reader.readLine());
+
+        for (int i = 0; i < n; i++) {
+            String s = reader.readLine();
+            if (s.isEmpty()) break;
+            array.add(Integer.parseInt(s));
+        }
+        return array;
+    }
+}
+
+/* Минимальное из N чисел
+1. Ввести с клавиатуры число N.
+2. Считать N целых чисел и заполнить ими список - метод getIntegerList.
+3. Найти минимальное число среди элементов списка - метод getMinimum.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Программа должна считывать значения с клавиатуры.
+3. Класс Solution должен содержать только три метода.
+4. Метод getIntegerList() должен считать с клавиатуры число N, потом вернуть список размером N элементов, заполненный числами с клавиатуры.
+5. Метод getMinimum() должен вернуть минимальное число среди элементов списка.
+6. Метод main() должен вызывать метод getIntegerList().
+7. Метод main() должен вызывать метод getMinimum(). */
+
+
+package com.javarush.task.task08.task0823;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/* 
+Омовение Рамы
+*/
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String string = reader.readLine();
+        String[] words = string.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            if (!word.isEmpty()) {
+                String firstLetter = word.substring(0, 1).toUpperCase();
+                words[i] = firstLetter + word.substring(1);
+            }
+        }
+            System.out.println(String.join(" ", words));
+        }
+
+}
+
+
+/* Омовение Рамы
+Написать программу, которая вводит с клавиатуры строку текста.
+Программа заменяет в тексте первые буквы всех слов на заглавные.
+Вывести результат на экран.
+
+Пример ввода:
+мама мыла раму.
+
+Пример вывода:
+Мама Мыла Раму.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Программа должна считывать строку с клавиатуры.
+3. Программа должна заменять в тексте первые буквы всех слов на заглавные.
+ S. Sh. */
+ 
+ 
+ package com.javarush.task.task08.task0824;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+/* 
+Собираем семейство
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        Human child1 = new Human("Naf-Naf", true, 21);
+        Human child2 = new Human("Nif-Nif", true, 19);
+        Human child3 = new Human("Nuf-Nuf", false, 16);
+        ArrayList<Human> grandChildren = new ArrayList<>(Arrays.asList(child1, child2, child3));
+
+        Human father = new Human("David", true, 50, grandChildren);
+        Human mother = new Human("Sara", false, 47, grandChildren);
+
+        ArrayList<Human> childOfManiaAndVania = new ArrayList<>(Arrays.asList(father));
+        ArrayList<Human> childOfTaniaAndSania = new ArrayList<>(Arrays.asList(mother));
+
+        Human babaMania = new Human("Baba Mania", false, 74, childOfManiaAndVania);
+        Human babaTania = new Human("Baba Tania", false, 71, childOfTaniaAndSania);
+        Human dedaVania = new Human("Deda Vania", true, 77, childOfManiaAndVania);
+        Human dedaSania = new Human("Deda Sania", true, 73, childOfTaniaAndSania);
+
+        System.out.println(dedaVania.toString());
+        System.out.println(dedaSania.toString());
+        System.out.println(babaMania.toString());
+        System.out.println(babaTania.toString());
+        System.out.println(father.toString());
+        System.out.println(mother.toString());
+        System.out.println(child1.toString());
+        System.out.println(child2.toString());
+        System.out.println(child3.toString());
+
+    }
+
+    public static class Human {
+        String name;
+        boolean sex;
+        int age;
+        ArrayList<Human> children;
+
+        public Human(String name, boolean sex, int age, ArrayList<Human> children) {
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.children = children;
+        }
+
+        public Human(String name, boolean sex, int age) {
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            children = new ArrayList<Human>();
+        }
+
+        public String toString() {
+            String text = "";
+            text += "Имя: " + this.name;
+            text += ", пол: " + (this.sex ? "мужской" : "женский");
+            text += ", возраст: " + this.age;
+
+            int childCount = this.children.size();
+            if (childCount > 0) {
+                text += ", дети: " + this.children.get(0).name;
+
+                for (int i = 1; i < childCount; i++) {
+                    Human child = this.children.get(i);
+                    text += ", " + child.name;
+                }
+            }
+            return text;
+        }
+    }
+}
+
+/* Собираем семейство
+1. Создай класс Human с полями имя (String), пол (boolean), возраст (int), дети (ArrayList<Human>).
+2. Создай объекты и заполни их так, чтобы получилось: два дедушки, две бабушки, отец, мать, трое детей.
+3. Выведи все объекты Human на экран (Подсказка: используй метод toString() класса Human).
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Класс Human должен содержать четыре поля.
+3. Класс Human должен содержать один метод.
+4. Класс Solution должен содержать один метод.
+5. Программа должна создавать объекты и заполнять их так, чтобы получилось:
+два дедушки, две бабушки, отец, мать, трое детей и выводить все объекты Human на экран. */
+
+
+package com.javarush.task.task08.task0826;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/* 
+Пять победителей
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] array = new int[20];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+
+        sort(array);
+
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        System.out.println(array[2]);
+        System.out.println(array[3]);
+        System.out.println(array[4]);
+    }
+
+    public static void sort(int[] array) {
+        for (int out = array.length - 1; out >= 1; out--) {
+            for (int in = 0; in < out; in++) {
+                if (array[in] < array[in + 1]) {
+                    array[in] += array[in + 1];
+                    array[in + 1] = array[in] - array[in + 1];
+                    array[in] -= array[in + 1];
+                }
+            }
+        }
+    }
+}
+
+/* Пять победителей
+Создать массив на 20 чисел.
+Заполнить его числами с клавиатуры.
+Вывести пять наибольших чисел.
+Каждое значение с новой строки.
+
+
+Requirements:
+1. Программа должна выводить числа на экран.
+2. Программа должна считывать значения с клавиатуры.
+3. Класс Solution должен содержать два метода.
+4. Метод sort() должен сортировать массив чисел от большего к меньшему.
+5. Метод main() должен вызывать метод sort().
+6. Программа должна выводить пять наибольших чисел массива. Каждое значение с новой строки. */
+
+
+package com.javarush.task.task08.task0827;
+
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
+/* 
+Работа с датой
+*/
+
+public class Solution {
+    public static void main(String[] args) throws ParseException {
+        System.out.println(isDateOdd("MAY 1 2013"));
+    }
+
+    public static boolean isDateOdd(String date) throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMMM d yyyy", Locale.US);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(sdf.parse(date));
+        int dayOfYear = calendar.get(Calendar.DAY_OF_YEAR);
+
+        return dayOfYear % 2 == 1;
+    }
+
+}
+
+/* Работа с датой
+1. Реализовать метод isDateOdd(String date) так, чтобы он возвращал true, если количество дней с начала года - нечетное число, иначе false
+2. String date передается в формате FEBRUARY 1 2013
+Не забудь учесть первый день года.
+
+Пример:
+JANUARY 1 2000 = true
+JANUARY 2 2020 = false
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Класс Solution должен содержать два метода.
+3. Метод isDateOdd() должен возвращать true, если количество дней с начала года - нечетное число, иначе false.
+4. Метод main() должен вызывать метод isDateOdd().
+ S. Sh. */
+ 
+ 
+ package com.javarush.task.task08.task0828;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+/* 
+Номер месяца
+*/
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+
+        String monthName = (new BufferedReader(new InputStreamReader(System.in))).readLine();
+
+        List <String> month = Arrays.asList("january", "february", "march", "april", "may", "june", "july",
+                "august", "september", "october", "november", "december");
+        System.out.println(monthName + " is the " + (month.indexOf(monthName.toLowerCase()) + 1) + " month");
+    }
+}
+
+/* Номер месяца
+
+Программа вводит с клавиатуры имя месяца и выводит его номер на экран в виде: "May is the 5 month".
+Используй коллекции.
+
+
+Requirements:
+1. Программа должна считывать одно значение с клавиатуры.
+2. Программа должна выводить текст на экран.
+3. Программа должна использовать коллекции.
+4. Программа должна считывать с клавиатуры имя месяца и выводить его номер на экран по заданному шаблону.
+Хоть метод month.getMonth() и устарел, но оставлю это решение здесь.
+        try{
+            Date month = new SimpleDateFormat("MMMM", Locale.US).parse(monthName);
+            System.out.println(monthName + " is the " + (month.getMonth()+1) + " month");
+        }
+        catch(ParseException e){
+            e.printStackTrace();
+        } */
+        
+        
+        package com.javarush.task.task08.task0829;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
+/* 
+Модернизация ПО
+*/
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        List<String> list = new ArrayList<>();
+        while (true) {
+            String cityAndFamily = reader.readLine();
+            if (cityAndFamily.isEmpty()) {
+                break;
+            }
+
+            list.add(cityAndFamily);
+        }
+
+        String city = reader.readLine();
+
+        String familyName = list.get(list.indexOf(city) + 1);
+        System.out.println(familyName);
+    }
+    }
+
+
+/* Модернизация ПО
+Задача: Программа определяет, какая семья (фамилию) живёт в доме с указанным номером.
+Новая задача: Программа должна работать не с номерами домов, а с городами:
+
+Пример ввода:
+Москва
+Ивановы
+Киев
+Петровы
+Лондон
+Абрамовичи
+
+Лондон
+
+Пример вывода:
+Абрамовичи
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Программа должна считывать значения с клавиатуры.
+3. Класс Solution должен содержать один метод.
+4. Программа должна вывести фамилию семьи по введенному городу.
+
+*/
+
+
+package com.javarush.task.task08.task0830;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+/* 
+Задача по алгоритмам Ӏ Java Syntax: 8 уровень, 11 лекция
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String[] array = new String[20];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = reader.readLine();
+        }
+        sort(array);
+        for (String word : array) {
+            System.out.println(word);
+        }
+    }
+
+    public static void sort(String[] array) {
+        for (int out = array.length - 1; out >= 1; out--) {
+            for (int in = 0; in < out; in++) {
+                if (isGreaterThan(array[in], array[in + 1])) {
+                    String swap = array[in];
+                    array[in] = array[in + 1];
+                    array[in + 1] = swap;
+                }
+            }
+        }
+    }
+
+    //Метод для сравнения строк: 'а' больше чем 'b'
+    public static boolean isGreaterThan(String a, String b) {
+        return a.compareTo(b) > 0;
+    }
+}
+
+/*    Задача по алгоритмам Ӏ Java Syntax: 8 уровень, 11 лекция
+        Задача: Введи с клавиатуры 20 слов и выведи их в алфавитном порядке. Каждое слово - с новой строки.
+
+
+        Requirements:
+        1. Программа должна выводить текст на экран.
+        2. Программа должна считывать значения с клавиатуры.
+        3. Класс Solution должен содержать три метода.
+        4. Метод main() должен вызывать метод sort().
+        5. Метод sort() должен вызывать метод isGreaterThan().
+        6. Выведенные слова должны быть отсортированы в алфавитном порядке.
+
+        Есть замечательный метод Arrays.sort(array); по условию задачи не пройдет, то оставлю здесь на память.   */
+        
+        
+        

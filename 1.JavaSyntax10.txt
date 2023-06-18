@@ -1,0 +1,544 @@
+package com.javarush.task.task10.task1001;
+
+/*
+Задача №1 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = (char) 0;
+
+        int b = (byte) a + 46;
+
+        byte c = (byte) (a * b);
+
+        double f = (char) 1234.15;
+
+        long d = (long) (a + f / c + b);
+        System.out.println(d);
+    }
+}
+
+/* Задача №1 на преобразование целых типов
+Правильно расставь операторы приведения типа, чтобы получился ответ: d > 0.
+int a = 0;
+int b = (byte) a + 46;
+byte c = (byte) (a*b);
+double f = (char) 1234.15;
+long d = (short) (a + f / c + b);
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную c типа byte.
+6. Метод main() должен содержать переменную f типа double.
+7. Метод main() должен содержать переменную d типа long.
+8. Начальное значение переменных при инициализации менять нельзя. Можно только редактировать операторы приведения типа (добавлять/удалять/изменять).
+9. Программа должна выводить число больше, чем 0. */
+
+
+package com.javarush.task.task10.task1002;
+
+/* 
+Задача №2 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = 15;
+        int b = 4;
+        float c = (float) a / b;
+        double d = a * 1e-3 + c;
+
+        System.out.println(d);
+    }
+}
+
+/* Задача №2 на преобразование целых типов
+Правильно расставь операторы приведения типа, чтобы получился ответ: d=3.765.
+int a = 15;
+int b = 4;
+float c = a / b;
+double d = a * 1e-3 + c;
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную c типа float.
+6. Метод main() должен содержать переменную d типа double.
+7. Начальное значение переменных при инициализации менять нельзя. Можно добавлять только операторы приведения типа.
+8. Программа должна выводить число 3.765. */
+
+
+package com.javarush.task.task10.task1003;
+
+/* 
+Задача №3 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        float f = (float) 128.50;
+        int i = (int) f;
+        int b = (byte) (i + f);
+        System.out.println(b);
+    }
+}
+
+/* Добавь одну операцию по преобразованию типа, чтобы получился ответ: b = 0.
+float f = (float)128.50;
+int i = (int)f;
+int b = (int)(i + f);
+
+Требования:
+•	Программа должна выводить текст на экран.
+•	Нельзя менять команду вывода на экран.
+•	Метод main() должен содержать переменную f типа float.
+•	Метод main() должен содержать переменную i типа int.
+•	Метод main() должен содержать переменную b типа int.
+•	Начальное значение переменных при инициализации менять нельзя. Можно добавлять только операторы приведения типа.
+•	Программа должна выводить число 0. */
+
+
+package com.javarush.task.task10.task1004;
+
+/* 
+Задача №4 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        short number = 9;
+        char zero = '0';
+        int nine = (zero + number);
+        System.out.println((char) nine);
+    }
+}
+
+/* Задача №4 на преобразование целых типов
+        Добавь одну операцию по преобразованию типа, чтобы на экран вывелось 9.
+        short number = 9;
+        char zero = '0';
+        int nine = (zero + number);
+
+
+        Requirements:
+        1. Программа должна выводить текст на экран.
+        2. Нельзя менять команду вывода на экран. В ней можно только добавлять операторы приведения типа.
+        3. Метод main() должен содержать переменную number типа short.
+        4. Метод main() должен содержать переменную zero типа char.
+        5. Метод main() должен содержать переменную nine типа int.
+        6. Начальное значение переменных при инициализации менять нельзя. Можно добавлять только операторы приведения типа.
+        7. Программа должна выводить число 9. */
+        
+        
+        package com.javarush.task.task10.task1005;
+
+/* 
+Задача №5 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = (short) 44;
+        int b = (short) 300;
+        short c = (short) (b - a);
+        System.out.println(c);
+    }
+}
+
+/* Задача №5 на преобразование целых типов
+Правильно расставь операторы приведения типа, чтобы получился ответ: c = 256.
+int a = (byte)44;
+int b = (byte)300;
+short c = (byte)(b - a);
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную c типа short.
+6. Начальное значение переменных при инициализации менять нельзя. Можно изменять только операторы приведения типа.
+7. Программа должна выводить число 256. */
+
+
+package com.javarush.task.task10.task1006;
+
+/* 
+Задача №6 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        double d = (short) 2.50256e2d;
+        char c = 'd';
+        short s = (short) 2.22;
+        int i = 150000;
+        float f = 0.50f;
+        double result = f + (i / c) - (d * s) - 500e-3;
+        System.out.println("result: " + result);
+    }
+}
+
+/* Задача №6 на преобразование целых типов
+Убери ненужные операторы приведения типа, чтобы получился ответ: result: 1000.0.
+double d = (short) 2.50256e2d;
+char c = (short) 'd';
+short s = (short) 2.22;
+int i = (short) 150000;
+float f = (short) 0.50f;
+double result = f + (i / c) - (d * s) - 500e-3;
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную c типа char.
+4. Метод main() должен содержать переменную s типа short.
+5. Метод main() должен содержать переменную i типа int.
+6. Метод main() должен содержать переменную f типа float.
+7. Метод main() должен содержать переменную d типа double.
+8. Метод main() должен содержать переменную result типа double.
+9. Начальное значение переменных при инициализации менять нельзя. Можно добавлять только операторы приведения типа.
+10. Программа должна выводить текст "result: 1000.0". */
+
+
+package com.javarush.task.task10.task1007;
+
+/* 
+Задача №7 на преобразование целых типов
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        long l = 1234_564_890L;
+        int x = 0b1000_1100_1010;
+        double m = (short) 110_987_654_6299.123_34;
+        float f = (int) l++ + 10 + ++x - (int) m;
+        l = (int) f / 1000;
+        System.out.println(l);
+    }
+}
+
+/* Задача №7 на преобразование целых типов
+Убери ненужные операторы приведения типа, чтобы получился ответ: 1234567.
+long l = (byte)1234_564_890L;
+int x = (byte)0b1000_1100_1010;
+double m = (byte)110_987_654_6299.123_34;
+float f = (byte)l++ + 10 + ++x - (float)m;
+l = (long) f / 1000;
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную l типа long.
+4. Метод main() должен содержать переменную x типа int.
+5. Метод main() должен содержать переменную m типа double.
+6. Метод main() должен содержать переменную f типа float.
+7. Значения переменных менять нельзя. Можно добавлять только операторы приведения типа.
+8. Программа должна выводить текст 1234567. */
+
+
+package com.javarush.task.task10.task1008;
+
+/* 
+Правильный ответ: d = 2.941
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = 50;
+        int b = 17;
+        double d = (double) a / b;
+        System.out.println(d);
+    }
+}
+
+/* Правильный ответ: d = 2.941
+Добавь в метод main() одну операцию по преобразованию типа, чтобы получился ответ: d = 2.941.
+
+Пример вывода:
+2.9411764705882355
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную d типа double.
+6. Значения переменных менять нельзя. Можно добавлять только операторы приведения типа.
+7. Программа должна выводить число 2.9411764705882355. */
+
+
+package com.javarush.task.task10.task1009;
+
+/* 
+Правильный ответ: d = 5.5
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 4;
+        int c = 3;
+        int e = 2;
+        double d = a + b / c / (double) e;
+        System.out.println(d);
+    }
+}
+
+/* Правильный ответ: d = 5.5
+Добавь в метод main() одну операцию по преобразованию типа, чтобы получался ответ: d = 5.5.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную c типа int.
+6. Метод main() должен содержать переменную e типа int.
+7. Метод main() должен содержать переменную d типа double.
+8. Значения переменных менять нельзя. Можно добавлять только операторы приведения типа.
+9. Программа должна выводить число 5.5. */
+
+
+package com.javarush.task.task10.task1010;
+
+/* 
+Правильный ответ: d = 1.0
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = (byte) 257;
+        int b = 4;
+        int c = 3;
+        int e = 2;
+        double d = a + b / c / e;
+
+        System.out.println(d);
+    }
+}
+
+/* Правильный ответ: d = 1.0
+Добавь в метод main() одну операцию по преобразованию типа, чтобы получался ответ: d = 1.0.
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Нельзя менять команду вывода на экран.
+3. Метод main() должен содержать переменную a типа int.
+4. Метод main() должен содержать переменную b типа int.
+5. Метод main() должен содержать переменную c типа int.
+6. Метод main() должен содержать переменную e типа int.
+7. Метод main() должен содержать переменную d типа double.
+8. Значения переменных менять нельзя. Можно добавлять только операторы приведения типа.
+9. Программа должна выводить число 1.0. */
+
+
+package com.javarush.task.task10.task1011;
+
+/* 
+Большая зарплата
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        String text = "Я не хочу изучать Java, я хочу большую зарплату";
+        for (int i = 0; i < 40; i++)
+        System.out.println(text.substring(i));
+    }
+
+}
+
+/* Большая зарплата
+Вывести на экран надпись «Я не хочу изучать Java, я хочу большую зарплату» 40 раз по образцу.
+
+Образец:
+Я не хочу изучать Java, я хочу большую зарплату
+ не хочу изучать Java, я хочу большую зарплату
+не хочу изучать Java, я хочу большую зарплату
+е хочу изучать Java, я хочу большую зарплату
+ хочу изучать Java, я хочу большую зарплату
+хочу изучать Java, я хочу большую зарплату
+...
+зарплату
+
+
+Requirements:
+1. Программа должна выводить текст на экран.
+2. Программа должна выводить 40 строк.
+3. В программе должен использоваться цикл for или while.
+4. Выведенный текст должен соответствовать примеру из условия. */
+
+
+package com.javarush.task.task10.task1012;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
+
+/* 
+Количество букв
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        // Алфавит
+        List<Character> alphabet = Arrays.asList(
+                'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж',
+                'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о',
+                'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц',
+                'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я');
+
+        // Ввод строк
+        ArrayList<String> list = new ArrayList<String>();
+        for (int i = 0; i < 10; i++) {
+            String line = reader.readLine();
+            list.add(line.toLowerCase());
+        }
+
+        Map<Character, Integer> alefAndFrequency = new HashMap<>();
+
+        for (String string : list) {
+            for (Character c : string.toLowerCase().toCharArray()) {
+
+                if (alphabet.contains(c)) {
+                    alefAndFrequency.put(c, alefAndFrequency.containsKey(c) ? alefAndFrequency.get(c) + 1 : 1);
+                }
+
+            }
+
+        }
+
+        for (Character c : alphabet) {
+            System.out.println(c + " " + alefAndFrequency.getOrDefault(c, 0));
+        }
+
+    }
+
+}
+
+/* Количество букв
+Введи с клавиатуры 10 строчек и посчитай в них количество различных букв без учета регистра. Результат выведи на экран в алфавитном порядке.
+
+Пример вывода:
+а 5
+б 8
+в 3
+г 7
+д 0
+...
+я 9
+
+
+Requirements:
+1. Программа должна 10 раз считывать данные с клавиатуры.
+2. Программа должна выводить текст на экран.
+3. Выведенный текст должен содержать 33 строки.
+4. Каждая строка вывода должна содержать букву русского алфавита, пробел и количество раз, которое буква встречалась в введенных строках.
+S. Sh. */
+
+
+package com.javarush.task.task10.task1014;
+
+/* 
+Расставьте минимум static-ов
+*/
+
+public class Solution {
+    public int A = 5;
+    public static int B = 5;
+    public static int C = 5;
+    public static int D = 5;
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        solution.A = 5;
+        solution.B = 5 * B;
+        solution.C = 5 * C * D;
+        Solution.D = 5 * D * C;
+
+        Solution.D = 5;
+    }
+
+    public int getA() {
+        return A;
+    }
+
+}
+
+/* Расставьте минимум static-ов
+Расставь как можно меньше модификаторов static так, чтобы пример скомпилировался.
+
+
+Requirements:
+1. В классе должна быть переменная A.
+2. В классе должна быть переменная B.
+3. В классе должна быть переменная C.
+4. В классе должна быть переменная D.
+5. Метод main не изменяй.
+6. Метод getA не изменяй. */
+
+
+package com.javarush.task.task10.task1017;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+/* 
+Безопасное извлечение из списка
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 20; i++) {
+            int number = Integer.parseInt(reader.readLine());
+            list.add(number);
+        }
+
+        System.out.println(safeGetElement(list, 5, 1));
+        System.out.println(safeGetElement(list, 20, 7));
+        System.out.println(safeGetElement(list, -5, 9));
+    }
+
+    public static int safeGetElement(ArrayList<Integer> list, int index, int defaultValue) {
+        try {
+            return list.get(index);
+        } catch (Exception e) {
+            return defaultValue;
+        }
+    }
+
+}
+
+/* Безопасное извлечение из списка
+Создай список целых чисел и введи с клавиатуры 20 значений. Создай метод по безопасному извлечению чисел из списка:
+int safeGetElement(ArrayList<Integer> list, int index, int defaultValue)
+Метод должен возвращать элемент списка (list) по его индексу (index). Если в процессе получения элемента возникло исключение, его нужно перехватить, и метод должен вернуть defaultValue.
+
+
+Requirements:
+1. Программа должна считывать 20 чисел с клавиатуры.
+2. Программа должна выводить данные на экран.
+3. Метод safeGetElement должен возвращать элемент списка по индексу, если исключений внутри метода не возникло.
+4. Метод safeGetElement должен возвращать defaultValue, если возникло исключений внутри метода. Исключение нужно перехватить.
+5. Метод safeGetElement не должен бросать исключения.
+S. Sh. */
